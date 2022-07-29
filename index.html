@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="./styles.css">
+    <img src="https://srmvcas.edu.in/wp-content/uploads/2020/08/logo_title.png" width="400px">
+    <img aling="center">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="contactForm">
+            <div class="alert">Your message sent</div>
+            <h2 align="center">Register Form For Blood Donor</h2>
+            <div class="inputBox">
+                <td><strong>NAME:</strong></td>
+                <input type="text" id="name" width="10%" height="10%" placeholder="Your name...." />
+            </div>
+
+            <div class="inputBox">
+                <td><strong>DOB:</strong></td>
+                <input type="date" id="dob" placeholder="Your age" />
+            </div>
+
+            <div class="inputBox">
+                <td><strong>SEX:</strong></td>
+    <td><input type="radio" name="gender" value="male" id= "Male">Male 
+    	<input type="radio" name="gender" value="female" id="Female">Female</td>
+    <td>&nbsp;</td>
+                
+            </div>
+            <div class="inputbox">
+                <td><strong>BLOOD GROUP:</strong></td>
+    <td><select   id="bloodGroup" name="slct1" onchange= " populate(this.id,'slct2')" >
+	<option>Select..</option>
+    <option value="A+">A+</option>
+    <option value="A-">A-</option>
+    <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="AB+">AB+</option>
+      <option values="AB-">AB-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+</select></td>
+            </div>
+
+            <div class="inputbox">
+
+                <td><strong>COLLAGE:</strong></td>
+    <td><input name="name" type="text" id="collage" placeholder= "Your collage"size="0" required/>
+    <td>&nbsp;</td>
+            </div>
+
+            <div class="inputbox">
+                <td><strong>PREVIOUS BLOOD DONATION DATE:</strong></td>
+    <td><input type="date" type="number" id="pbdd" size="35" required/></td>
+    <td>&nbsp;</td>
+
+            </div>
+
+            <div class="inputbox">
+                <td><strong>MOBILE NUMBER:</strong></td>
+    <td><input name="Mobile no. name3" placeholder="Mobile number" type="text" id="mobile" size="20" required/></td>
+    <td>&nbsp;</td>
+            </div>
+
+            <div class="inputBox">
+                
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+
+</html>
